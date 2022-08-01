@@ -20,7 +20,7 @@ export const putDb = async (content) => {
   const store = tx.objectStore("jate");
   const request = store.put({ id: 1, value: content });
   const result = await request;
-  // console.log("🚀 - data saved to the database", result);
+  console.log("🚀 - data saved to the database", result);
 };
 
 // TODO: Add logic for a method that gets all the content from the database
@@ -31,6 +31,7 @@ export const getDb = async () => {
   const store = tx.objectStore("jate");
   const request = store.get(1);
   const result = await request;
+  // adding the console log below triggers an error in the app. commented out the console log and the app now works
   // console.log("result.value", result);
   return result?.value;
 };

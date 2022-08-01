@@ -36,7 +36,7 @@
   "orientation": "portrait",
   "display": "standalone",
   "start_url": "/",
-  "description": "Just Another Text Editor",
+  "description": "just another text editor",
   "background_color": "#255ca3",
   "theme_color": "#255ca3"
 }
